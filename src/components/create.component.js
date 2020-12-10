@@ -40,7 +40,7 @@ export default class CreateHealth extends Component {
 
     axios
       .post("http://localhost:5000/health/add", health)
-      .then((res) => console.log(res.data))
+      .then((res) => (window.location = "/"))
       .catch((err) => console.log("Error: ", err));
     //   console.log(this.state);
   }
